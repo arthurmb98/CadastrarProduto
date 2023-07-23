@@ -33,3 +33,11 @@ e
 5ui/cadastro/src/app/shared/service/produto.service.ts,d\d\dd8be2b4f54f01dd8ae691cd82f220c4c2e1d21e
 t
 Dapi/cadastro/src/main/java/com/cadastro/cadastro/domain/Usuario.java,e\6\e62270c082add8ff5aed0a3b88646647022af7b4
+D
+api/cadastro/pom.xml,4\7\478842cd59c9f415dc205f00acf7aa4148dd6caf
+}
+Mapi/cadastro/src/main/java/com/cadastro/cadastro/CadastroProdApplication.java,8\2\8289918ee32e785bffb6b6b4d29906f1d31497b9
+‚
+Rapi/cadastro/src/main/java/com/cadastro/cadastro/repository/ProdutoRepository.java,6\e\6e6d796e04f0992eb4cece2540ecef20681b9fdc
+‚
+Rapi/cadastro/src/main/java/com/cadastro/cadastro/repository/UsuarioRepository.java,b\0\b0850ceb689b8465ff3ebd4424677fce29e425ac

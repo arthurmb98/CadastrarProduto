@@ -1,6 +1,5 @@
 package com.cadastro.cadastro.web;
 
-import com.cadastro.cadastro.config.CorsConfig;
 import com.cadastro.cadastro.domain.Produto;
 import com.cadastro.cadastro.repository.ProdutoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +19,6 @@ public class ProdutoController {
 
     @PostMapping("/add")
     public ResponseEntity<Produto> add(@RequestBody Produto produto) throws Exception {
-        CorsConfig.UsuarioLogado.isLogado();
         Produto p;
         try{
             p = repository.save(produto);
@@ -33,24 +31,20 @@ public class ProdutoController {
 
     @DeleteMapping("/{id}")
     public void delete(@PathVariable("id") long id) throws Exception {
-        CorsConfig.UsuarioLogado.isLogado();
         repository.deleteById(id);
     }
 
     @PutMapping("update")
     public Produto atualizar(@RequestBody Produto produto) throws Exception {
-        CorsConfig.UsuarioLogado.isLogado();
         return repository.save(produto);
     }
     @GetMapping("/all")
     public List<Produto> getAll() throws Exception {
-        CorsConfig.UsuarioLogado.isLogado();
         return repository.findAll();
     }
 
     @GetMapping("/{id}")
     public Produto getById(@PathVariable("id") long id) throws Exception {
-        CorsConfig.UsuarioLogado.isLogado();
         return repository.findById(id);
     }
 }
